@@ -25,7 +25,7 @@ public class CustomerRest {
 	static {
 		Customer customer1 = new Customer();
 		customer1.setId(1);
-		customer1.setName("Customer 1");
+		customer1.setName("Customer 10");
 		customer1.setEmail("customer1@gmail.com");
 		Customer customer2 = new Customer();
 		customer2.setId(2);
