@@ -1,5 +1,5 @@
 FROM tomcat
 
-ADD target/CustomerServices-1.0.war /usr/local/tomcat/webapps/CustomerServices.war
+ADD target/CustomerServices-1.0.war /var/lib/tomcat7/webapps/CustomerServices.war
 
 CMD ["catalina.sh", "run"]
