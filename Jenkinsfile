@@ -16,6 +16,6 @@ stage('Build') {
       
       stage ('DockerBuild') {
          
-       sh 'sudo Docker build -t amruthapbhat/customerservices .'
+       sh 'sudo docker build -t amruthapbhat/customerservices .'
       }
 }
