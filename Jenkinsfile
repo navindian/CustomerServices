@@ -17,7 +17,7 @@ stage 'DockerBuild'
 
 stage 'Publish'
 {
-	sh 'sudo docker login -u amruthapbhat -p dockerhub1234'
+	sh 'sudo docker login -u amruthapbhat -p dockerhub1234',
 	sh 'sudo docker push amruthapbhat/customerservices:latest'
 }
 
