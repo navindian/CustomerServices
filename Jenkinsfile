@@ -25,6 +25,6 @@ stage('Build') {
       }
       
       stage ('Deploy') {
-         sh 'sudo docker pull amruthapbhat'
+         sh 'sudo docker pull amruthapbhat/customerservices'
       }
    }
