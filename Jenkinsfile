@@ -18,4 +18,13 @@ stage('Build') {
          
        sh 'sudo docker build -t amruthapbhat/customerservices .'
       }
-}
+      
+      stage ('DockerPublish') {
+         sh ' sudo docker login -u amruthapbhat -p dockerhub1234'
+         sh 'sudo docker push amruthapbhat/customerservices:latest'
+      }
+      
+      stage ('Deploy') {
+         sh 'sudo docker pull amruthapbhat'
+      }
+   }
