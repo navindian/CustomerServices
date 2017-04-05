@@ -1,5 +1,6 @@
 #!groovy
 
+node {
 stage 'CodeFetch'
 {
 	checkout scm
@@ -24,4 +25,5 @@ stage 'Publish'
 stage 'Deploy'
 {
 	sh 'sudo docker pull amruthapbhat/customerservices'
+}
 }
